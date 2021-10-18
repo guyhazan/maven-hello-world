@@ -8,7 +8,6 @@ public class App
 {
     public static void main( String[] args )
     {
- /* Add your name to the "Hello World" message */
             
         System.out.println( "Hello World! - GuyHazan - " );
 
