@@ -25,7 +25,7 @@ jobs:
         cache: maven
     
     - name: Build with Maven
-      run: mvn -B -X package --file my-app/pom2.xml
+      run: mvn -B -X package --file my-app/pom.xml
       
     - name: Step 1 - Create a temporary artifact downloads folder
       run: mkdir downloads
