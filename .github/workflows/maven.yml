@@ -14,8 +14,6 @@ jobs:
 
     runs-on: ubuntu-latest
     
-<!--Had to change JDK version to 8 (GH)-->
-
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 8
