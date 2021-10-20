@@ -39,4 +39,4 @@ jobs:
         # Artifact name
         name: artifect01
         # Destination path
-        path: my-app/artifect01.jar
+        path: downloads
