@@ -25,3 +25,13 @@ jobs:
     - name: Build with Maven
     
       run: mvn -B -X package --file my-app/pom.xml
+      
+        
+    - name: Download a Build Artifact
+      uses: actions/download-artifact@v2.0.10
+      with:
+        # Artifact name
+        name: my-artifact
+        # Destination path
+        path: my_file.txt
+      
