@@ -28,10 +28,10 @@ jobs:
       run: mvn -B -X package --file my-app/pom.xml
                   
     - name: Step 0 - Publish the package
-      run: mvn install
+      run: mvn deploy
       
     - name: Step 1 - Create a temporary artifact downloads folder
-      run: mkdir deploy
+      run: mkdir my-app/downloads
         
     - name: step 2 - Add artifacts to publish to the temp folder
       run: |
