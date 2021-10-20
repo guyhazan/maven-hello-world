@@ -28,11 +28,11 @@ jobs:
       
 
     - name: Step 1 - Create a temporary artifact downloads folder
-      run: mkdir downloads
+      run: mkdir download
         
     - name: step 2 - Add artifacts to publish to the temp folder
       run: |
-        cd downloads
+        cd download
         echo 'alpha'    > alpha.html
         echo 'bravo'    > bravo.html
         echo 'charlie'  > charlie.html
@@ -42,4 +42,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with: 
         name: assets-for-download
-        path: downloads
+        path: download
