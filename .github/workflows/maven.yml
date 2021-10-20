@@ -31,7 +31,7 @@ jobs:
       run: mvn install
       
     - name: Step 1 - Create a temporary artifact downloads folder
-      run: mkdir downloads
+      run: mkdir deploy
         
     - name: step 2 - Add artifacts to publish to the temp folder
       run: |
